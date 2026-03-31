@@ -1,5 +1,2 @@
-A simple scenario inspired by Karel The Robot and modified by Thomas Kempe & David Tepaﬂe
-
-In diesem Szenario können verschiedene Roboter (Unterklassen von Roboter) erzeugt werden.
-Mit Hilfe einiger Sensoren können diese Roboter auch komplexe Aufgaben erledigen.
-Die Roboter können zudem Akkus aufnehmen und Schrauben ablegen.
+# Greenfoot3D
+This repository contains a fully functional 3D renderer for triangle-based .obj file implemented in the educational Greenfoot Rover scenario.
