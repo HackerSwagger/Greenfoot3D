@@ -1,0 +1,29 @@
+#BlueJ class context
+comment0.target=Painter
+comment1.params=filename\ verts\ tris
+comment1.target=void\ fileImpTest(java.lang.String,\ java.util.ArrayList,\ java.util.ArrayList)
+comment1.text=\r\n\ Diese\ Funktion\ dient\ zum\ importieren\ von\ Dateien\ im\ .obj\ Format\ mithilfe\ der\ Scanner-Klasse.\r\n\ Die\ .obj\ Dateien\ enthalten\ Eckdaten\ von\ 3D-Formen\ die\ im\ Format\ wie\ die\ Koordinaten\ der\r\n\ Vektor-Klasse\ aufgebaut\ sind,\ also\ in\ x,y\ und\ z.\ So\ kann\ ich\ diese\ Daten\ problemlos\r\n\ in\ mein\ vorhandenes\ Programm\ integrieren\ und\ so\ jedes\ belibiege\ 3D-Modell\ mit\ diesem\r\n\ Format\ anzeigen\ lassen.\ Die\ entnommenen\ Daten\ werden\ erst\ einzeln\ in\ einer\ Liste\ Punkte\ \r\n\ gespeichert\ und\ dann\ in\ eine\ Liste\ Dreiecke\ \u00FCbertragen.\r\n
+comment10.params=projTris\ drawTris
+comment10.target=int[][]\ points(java.util.ArrayList,\ boolean)
+comment2.params=fName
+comment2.target=java.util.ArrayList\ meshTris(java.lang.String)
+comment3.params=p1\ p2\ points
+comment3.target=void\ drawLine(Painter.Vec3,\ Painter.Vec3,\ int[][])
+comment3.text=\r\n\ Diese\ Funktion\ ahmt\ im\ Prinzip\ nur\ eine\ Algorithmus\ zum\ Zeichnen\ von\ Linien\ mit\ Pixeln,\ also\ eine\ eigentlich\ \r\n\ sehr\ grundlegende\ Systemfunktion.\ Hier\ berechne\ ich\ mithilfe\ einer\ erweiterten\ und\ abgewandelten\r\n\ Version\ des\ einfachsten\ Linienzeichnungsalgorithmus,\ wie\ er\ hier\ beschrieben\ ist\:\ https\://en.wikipedia.org/wiki/Line_drawing_algorithm\r\n\ die\ Punkte\ der\ Linie\ und\ f\u00FCge\ sie\ einer\ Liste\ f\u00FCr\ alle\ Punkte\ zu.\r\n
+comment4.params=p1\ p2\ p3\ points
+comment4.target=void\ drawTri(Painter.Vec3,\ Painter.Vec3,\ Painter.Vec3,\ int[][])
+comment4.text=\r\n\ Die\ Linienfunktion\ wird\ f\u00FCr\ die\ Punktkombinationen\ eines\ Dreiecks\ angewendet\r\n
+comment5.params=p1\ p2\ botP\ points
+comment5.target=void\ fillTopFlat(Painter.Vec3,\ Painter.Vec3,\ Painter.Vec3,\ int[][])
+comment5.text=\r\n\ Die\ folgenden\ Funktionen\ sind\ zum\ f\u00FCllen\ der\ gezeichneten\ Dreiecke\ gedacht,\ funktionieren\r\n\ mit\ dem\ vorhandenen\ System\ jedoch\ nicht\ so\ gut,\ dass\ man\ sie\ in\ ihrer\ jetzigen\ Form\r\n\ nutzen\ k\u00F6nnte.\ Au\u00DFerdem\ fehlt\ zur\ Unterscheidung\ der\ Seiten\ dann\ noch\ ein\ notwendiges\r\n\ System\ f\u00FCr\ Beleuchtung\ bzw.\ variierende\ Seitenfarben.\ Die\ Algorithmen\ sind\ Abwandlungen\ der\r\n\ hier\ beschrieben\ F\u00FCllfunktionen\:\ http\://www.sunshine2k.de/coding/java/TriangleRasterization/TriangleRasterization.html\r\n
+comment6.params=topP\ p2\ p3\ points
+comment6.target=void\ fillBotFlat(Painter.Vec3,\ Painter.Vec3,\ Painter.Vec3,\ int[][])
+comment7.params=p1\ p2\ p3\ points
+comment7.target=void\ fillTri(Painter.Vec3,\ Painter.Vec3,\ Painter.Vec3,\ int[][])
+comment8.params=vector\ vectorOut\ matrix
+comment8.target=void\ MatrixVectorMal(Painter.Vec3,\ Painter.Vec3,\ double[][])
+comment8.text=\r\n\ Funktion\ zum\ multiplizieren\ von\ Matrixen\ (Matritzen?),\ lediglich\r\n\ zur\ Vereinfachung\ gedacht,\ da\ diese\ Operation\ mehrmals\ n\u00F6tig\ ist.\r\n
+comment9.params=tris\ projTris\ zRotation\ xRotation\ projectionMatrix\ rotationX\ rotationZ\ dist\ inf
+comment9.target=void\ projectTriangles(java.util.ArrayList,\ java.util.ArrayList,\ double[][],\ double[][],\ double[][],\ double,\ double,\ double,\ java.lang.String)
+comment9.text=\r\n\ Diese\ Funktion\ ist\ der\ eigentliche\ Kern\ des\ Programms,\ da\ sie\ daf\u00FCr\ verantwortlich\ ist\ die\r\n\ 3-dimensionalen\ Koordinaten\ in\ 2-dimensionalen\ Raum\ zu\ projizieren.\ Ich\ versuche\ die\ einzelnen\r\n\ Schritte\ nach\ M\u00F6glichkeit\ so\ genau\ es\ geht\ in\ den\ Kommentaren\ zu\ beschreiben,\ es\ ist\ aber\ sicher\r\n\ Ratsam\ sich\ dieses\ Video\ dazu\ anzusehen\:\ https\://www.youtube.com/watch?v\=ih20l3pJoeU\r\n\ Dort\ werden\ die\ Konzepte\ und\ genrellen\ mathematischen\ Vorg\u00E4nge\ genau\ beschrieben\ und\ anschaulich/bildlich\r\n\ erkl\u00E4rt.\ \r\n\ \r\n\ W\u00E4hrend\ diese\ Funktion\ in\ vielen\ Teilen\ der\ Programmunterschiede\ wegen\ abweichen\ muss\ gibt\ das\ Video\ einen\r\n\ sehr\ guten\ Eindruck\ wie\ das\ Programm\ sich\ aufbaut\ und\ ich\ h\u00E4tte\ es\ nicht\ geschafft\ ohne\ es\ dieses\ Projekt\r\n\ ansatzweise\ so\ schnell\ so\ weit\ zu\ bringen.\r\n
+numComments=11
